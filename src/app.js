@@ -1,6 +1,7 @@
 const express = require('express') ;
 const cors = require('cors');
-require('./database/index.js');
+const ContatoRoute = require( './app/routes/Contato');
+require('./database/index');
 
 class App {
     constructor() {
@@ -15,7 +16,7 @@ class App {
     }
 
     routers() {
-        this.server.use();           
+        this.server.use(ContatoRoute);           
     }
 }
 

@@ -1,4 +1,6 @@
-import Sequelize, { Model } from 'sequelize';
+const Sequelize = require('sequelize');
+const Model = require('sequelize').Model;
+
 
 class Contato extends Model {
     static init(sequelize) {

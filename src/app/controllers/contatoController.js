@@ -1,4 +1,4 @@
-import Contato from '../models/Contato';
+const Contato = require('../models/Contato');
 
 class ContatoController {
     async index(req, res) {
@@ -25,6 +25,8 @@ class ContatoController {
         if(!name || !phone || !email) {
             return res.status(400).json({error: 'Preencha todas as informações'});
         }
+
+        const contato = await Contato.create(req.body);
 
 
         return res.status(200).json({message: 'Obrigado pelo contato!'});
