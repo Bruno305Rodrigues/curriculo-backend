@@ -19,6 +19,8 @@ class ContatoController {
         return res.json(contatos);
     }
 
+    //store
+
     async store(req, res) {
         const { name, phone, email } = req.body;
 
