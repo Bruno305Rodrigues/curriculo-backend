@@ -1,6 +1,7 @@
 const express = require('express') ;
 const cors = require('cors');
 const ContatoRoute = require( './app/routes/Contato');
+const RecadoRoute = require( './app/routes/Recado');
 require('./database/index');
 
 class App {
@@ -16,7 +17,8 @@ class App {
     }
 
     routers() {
-        this.server.use(ContatoRoute);           
+        this.server.use(ContatoRoute);
+        this.server.use(RecadoRoute);          
     }
 }
 

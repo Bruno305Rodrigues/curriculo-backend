@@ -1,10 +1,12 @@
 
 const Sequelize = require('sequelize');
-const Contato = require('../app/models/Contato')
+const Contato = require('../app/models/Contato');
+const Recado = require('../app/models/Recados');
 const config = require('../config/database');
 
 const models = [
     Contato,
+    Recado,
 ]
 
 class Database {    
