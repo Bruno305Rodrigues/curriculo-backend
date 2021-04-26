@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build":"sucrase ./src -d ./dist --transforms imports" 
   },
   "keywords": [],
   "author": "",
