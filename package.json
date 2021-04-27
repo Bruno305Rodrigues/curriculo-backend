@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "node ./bin/www",
     "build":"sucrase ./src -d ./dist --transforms imports",
-    "start": "node -r dotenv/config ./dist/app.js" 
+    "roda": "node -r dotenv/config ./dist/app.js", 
+    "start": "node src/database/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
